@@ -4,8 +4,6 @@ import { GlobalContext } from "./context/GlobalState";
 const AddTransaction = () => {
     const [text, setText] = useState('');
     const [amount, setAmount] = useState(0);
-
-
     const { addTransaction } = useContext(GlobalContext);
 
     const onSubmit = (e) => {
@@ -23,7 +21,6 @@ const AddTransaction = () => {
             setAmount('');
         }
     }
-
     return (
         <>
             <h3>Add new AddTransaction</h3>
@@ -39,7 +36,7 @@ const AddTransaction = () => {
                 <button className="btn">Add Transaction</button>
             </form>
         </>
-    )
+    );
 }
 
-export default AddTransaction
+export default AddTransaction;

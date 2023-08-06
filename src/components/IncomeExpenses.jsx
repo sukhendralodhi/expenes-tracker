@@ -1,5 +1,5 @@
-import { useContext } from "react"
-import { GlobalContext } from "./context/GlobalState"
+import { useContext } from "react";
+import { GlobalContext } from "./context/GlobalState";
 
 const IncomeExpenses = () => {
 
@@ -21,7 +21,7 @@ const IncomeExpenses = () => {
                 <p className="money minus">-${expense}</p>
             </div>
         </div>
-    )
+    );
 }
 
-export default IncomeExpenses
+export default IncomeExpenses;
